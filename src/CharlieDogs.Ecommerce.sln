@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Api", "1. Api", "{53A39A1C-C0BA-446C-873B-4123A12D9A91}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Application", "2. Application", "{4BA2C5D4-569C-4E20-AF0D-E6ABDB79875F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Domain", "3. Domain", "{51CEF2D9-098E-41A4-9655-80A8C948B42D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Infrastructure", "4. Infrastructure", "{2230AE35-F53A-456F-ABA8-3503991A9E1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 Persistence", "4.1 Persistence", "{77CDE7D8-93C0-450E-8C50-0E52C112CF44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 CrossCutting", "4.2 CrossCutting", "{98F59C09-9347-48BF-90FA-D2F4DDBB0689}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary1", "ClassLibrary1\ClassLibrary1.csproj", "{38D32C4E-2599-43D7-8B04-273E46704FCF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{38D32C4E-2599-43D7-8B04-273E46704FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38D32C4E-2599-43D7-8B04-273E46704FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38D32C4E-2599-43D7-8B04-273E46704FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38D32C4E-2599-43D7-8B04-273E46704FCF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77CDE7D8-93C0-450E-8C50-0E52C112CF44} = {2230AE35-F53A-456F-ABA8-3503991A9E1C}
+		{98F59C09-9347-48BF-90FA-D2F4DDBB0689} = {2230AE35-F53A-456F-ABA8-3503991A9E1C}
+		{38D32C4E-2599-43D7-8B04-273E46704FCF} = {51CEF2D9-098E-41A4-9655-80A8C948B42D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CA98E35A-4CB5-45A7-A7E2-4A2885817AA2}
+	EndGlobalSection
+EndGlobal
