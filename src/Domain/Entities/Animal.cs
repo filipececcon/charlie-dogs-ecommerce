@@ -15,7 +15,15 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
 
         public int Age { get; set; }
 
-        public AnimalSize AnimalSize { get; set; }
+        public string Description { get; set; }
+
+        #region Relationships
+
+        public int AnimalSizeId { get; set; }
+
+        public virtual AnimalSize AnimalSize { get; set; }
+
+        #endregion
 
         public override void Validate()
         {

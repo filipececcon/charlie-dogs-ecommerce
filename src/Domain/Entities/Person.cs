@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ChalieDogs.Ecommerce.Domain.Entities
 {
@@ -9,6 +10,12 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
         public string CPF { get; set; }
 
         public string Email { get; set; }
+
+        #region Relationships
+
+        public virtual List<Account> Accounts { get; set; }
+
+        #endregion
 
         public override void Validate()
         {

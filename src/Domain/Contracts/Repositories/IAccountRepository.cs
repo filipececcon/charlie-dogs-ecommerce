@@ -2,7 +2,7 @@
 
 namespace ChalieDogs.Ecommerce.Domain.Contracts.Repositories
 {
-    interface IAccountRepository : IRepositoryBase<Account>
+    public interface IAccountRepository : IRepositoryBase<Account>
     {
     }
 }
