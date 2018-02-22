@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ChalieDogs.Ecommerce.Domain.Exceptions;
 using System.Collections.Generic;
 
 namespace ChalieDogs.Ecommerce.Domain.Entities
@@ -13,7 +13,7 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(Size))
             {
-                throw new Exception("Tamanho do animal em branco");
+                throw new AnimalSizeException("Tamanho");
             }
         }
     }

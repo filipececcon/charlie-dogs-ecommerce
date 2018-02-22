@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ChalieDogs.Ecommerce.Domain.Exceptions;
 
 namespace ChalieDogs.Ecommerce.Domain.Entities
 {
@@ -18,12 +18,12 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(Username))
             {
-                throw new Exception("Usuário em branco");
+                throw new AccountException("Usuário");
             }
 
             if (string.IsNullOrWhiteSpace(Password))
             {
-                throw new Exception("Senha em branco");
+                throw new AccountException("Senha");
             }
         }
     }

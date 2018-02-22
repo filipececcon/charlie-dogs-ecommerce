@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ChalieDogs.Ecommerce.Domain.Exceptions;
 
 namespace ChalieDogs.Ecommerce.Domain.Entities
 {
@@ -29,17 +29,17 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(Picture))
             {
-                throw new Exception("Foto não informada");
+                throw new AnimalException("Foto");
             }
 
             if (Price < 0)
             {
-                throw new Exception("Preço menor que zero");
+                throw new AnimalException("Preço", "Preço menor que zero");
             }
 
             if (Age < 0)
             {
-                throw new Exception("Idade menor que zero");
+                throw new AnimalException("Idade", "Idade menor que zero");
             }
 
             AnimalSize.Validate();

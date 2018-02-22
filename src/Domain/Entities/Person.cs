@@ -1,4 +1,4 @@
-﻿using System;
+﻿using ChalieDogs.Ecommerce.Domain.Exceptions;
 using System.Collections.Generic;
 
 namespace ChalieDogs.Ecommerce.Domain.Entities
@@ -21,17 +21,17 @@ namespace ChalieDogs.Ecommerce.Domain.Entities
         {
             if (string.IsNullOrWhiteSpace(Name))
             {
-                throw new Exception("Nome em branco");
+                throw new PersonException("Nome");
             }
 
             if (string.IsNullOrWhiteSpace(CPF))
             {
-                throw new Exception("CPF em branco");
+                throw new PersonException("CPF");
             }
 
             if (string.IsNullOrWhiteSpace(Email))
             {
-                throw new Exception("Email em branco");
+                throw new PersonException("Email");
             }
         }
     }
